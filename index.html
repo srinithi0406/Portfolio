@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-    
+
     <header class="navbar">
         <div class="logo">Srinithi</div>
         <button class="menu-toggle" aria-label="Toggle navigation menu">
@@ -23,6 +25,7 @@
             <a href="#projects" class="nav-link">Projects</a>
             <a href="#achievements" class="nav-link">Achievements</a>
             <a href="#experience" class="nav-link">Experience</a>
+            <a href="#clubs" class="nav-link">Clubs</a>
             <a href="#contact" class="nav-link">Contact</a>
         </nav>
     </header>
@@ -35,22 +38,24 @@
             <div class="hero-right">
                 <h1 class="hero-text">Hi, I'm <span class="highlight-text">Srinithi</span> 👋</h1>
                 <p class="intro-text">
-                    I'm an aspiring developer passionate about creating engaging and dynamic web experiences. Welcome to my portfolio!
-                    
+                    I'm an aspiring developer with experience in <b>full-stack web development</b> and <b>data
+                        science</b>, passionate
+                    about building intelligent and dynamic applications.
+                    I enjoy working with modern technologies to create scalable, real-world solutions.
                 </p>
             </div>
         </section>
 
         <section id="academics" class="content-section">
             <h2>Academic Journey</h2>
-            
+
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>Shiv Nadar University (2024 - Present)</h3>
                         <p><strong>B.Tech in Artificial Intelligence & Data Science</strong></p>
-                        <p class="grade">Current GPA: 9.385 / 10.0</p>
+                        <p class="grade">Current GPA: 9.439 / 10.0</p>
                         <p class="description">Focusing on Full-Stack Development, Data Science, and DSA.</p>
                     </div>
                 </div>
@@ -61,17 +66,19 @@
                         <h3>PSC School / Grade XII (2024 - 2023)</h3>
                         <p><strong>CBSE, Stream: Computer Science</strong></p>
                         <p class="grade">Grade: 96.4%</p>
-                        <p class="description">Awarded School First; 'Top Achiever' in Mathematics, Physics and Computer Science group.</p>
+                        <p class="description">Awarded School First; 'Top Achiever' in Mathematics, Physics and Computer
+                            Science group.</p>
                     </div>
                 </div>
-                
+
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>PSC School / Grade X (2021 - 2022)</h3>
                         <p><strong>CBSE</strong></p>
                         <p class="grade">Grade: 98.6%</p>
-                        <p class="description">Awarded School First; 'Top Achiever' in Mathematics(perfect score), Science, English.</p>
+                        <p class="description">Awarded School First; 'Top Achiever' in Mathematics(perfect score),
+                            Science, English.</p>
                     </div>
                 </div>
 
@@ -80,37 +87,86 @@
 
         <section id="projects" class="content-section">
             <h2>Featured Projects</h2>
-            
+
             <div class="projects-grid">
-                
+
                 <div class="project-card">
                     <h3>LeftOverLove - Local Food Sharing Web App</h3>
                     <p class="tech-stack">HTML | CSS (SASS) | JavaScript | Firebase</p>
-                    <p class="description">Developed a responsive web app to minimize food waste by enabling users to post and claim surplus food.
-                        Implemented user authentication, real-time food listings with filters, post expiry logic, and dashboard
+                    <p class="description">Developed a responsive web app to minimize food waste by enabling users to
+                        post and claim surplus food.
+                        Implemented user authentication, real-time food listings with filters, post expiry logic, and
+                        dashboard
                         management. Deployed via Firebase Hosting.</p>
                     <div class="project-links">
-                        <a href="https://leftoverlove-66411.web.app" target="_blank" class="cta-button primary">View Live Demo</a>
-                        <a href="https://github.com/srinithi0406/LeftOverLove" target="_blank" class="cta-button secondary">GitHub Code</a>
+                        <a href="https://leftoverlove-66411.web.app" target="_blank" class="cta-button primary">View
+                            Live Demo</a>
+                        <a href="https://github.com/srinithi0406/LeftOverLove" target="_blank"
+                            class="cta-button secondary">GitHub Code</a>
                     </div>
                 </div>
 
                 <div class="project-card">
+                    <h3>InternSync - AI-Powered Internship Tracker</h3>
+                    <p class="tech-stack">React | Node.js | Supabase | Groq AI</p>
+                    <p class="description">
+                        Developed a full-stack web app to track internship tasks, reflections, and progress via an
+                        interactive dashboard.
+                        Implemented task filtering, analytics charts, and secure authentication using Supabase.
+                        Integrated AI-powered report generation with export options (PDF/Markdown).
+                        Deployed frontend on Vercel and backend on Render.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://intern-sync-six.vercel.app/" target="_blank" class="cta-button primary">View
+                            Live Demo</a>
+                        <a href="https://github.com/srinithi0406/InternSync" target="_blank"
+                            class="cta-button secondary">GitHub Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Speech to ISL Translator</h3>
+                    <p class="tech-stack">Python | Flask | spaCy | MoviePy | Google Speech API</p>
+                    <p class="description">
+                        Developed a real-time web app to convert speech, audio, video, and text into ISL videos.
+                        Implemented NLP-based grammar transformation for ISL sentence structure using spaCy.
+                        Integrated speech-to-text and generated ISL videos with sign stitching and fallback
+                        finger-spelling.
+                        Enabled low-latency live translation via WebSockets in a Flask-based interface.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/srinithi0406/ISL" target="_blank" class="cta-button primary">View
+                            GitHub Code</a>
+                    </div>
+                </div>
+
+
+
+                <div class="project-card">
                     <h3>Movie Recommendation System using ML</h3>
                     <p class="tech-stack">Python | sklearn | Pandas | Streamlit</p>
-                    <p class="description">Developed a content-based movie recommendation engine that suggests top 10 similar movies based on the 
+                    <p class="description">Developed a content-based movie recommendation engine that suggests top 10
+                        similar movies based on the
                         movie genre, cast, crew etc., using TF-IDF vectorization and cosine similarity.</p>
                     <div class="project-links">
-                        <a href="https://github.com/srinithi0406/Movie_Recommendation_ml" target="_blank" class="cta-button primary">View GitHub Code</a>
+                        <a href="https://movies-reccomendation.streamlit.app/" target="_blank"
+                            class="cta-button primary">View Live Demo</a>
+                        <a href="https://github.com/srinithi0406/Movie_Recommendation_ml" target="_blank"
+                            class="cta-button secondary">GitHub Code</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <h3>ShopZ: E-Commerce Site</h3>
                     <p class="tech-stack">HTML | CSS | JavaScript | local Storage</p>
-                    <p class="description">Developed a fully responsive e-commerce checkout UI focusing on user experience. The project uses Vanilla JavaScript to handle dynamic cart updates and ensures data integrity.</p>
+                    <p class="description">Developed a fully responsive e-commerce checkout UI focusing on user
+                        experience. The project uses Vanilla JavaScript to handle dynamic cart updates and ensures data
+                        integrity.</p>
                     <div class="project-links">
-                        <a href="https://github.com/srinithi0406/task9_checkout" target="_blank" class="cta-button primary">View GitHub Code</a>
+                        <a href="https://shop-z-beta.vercel.app/" target="_blank" class="cta-button primary">View Live
+                            Demo</a>
+                        <a href="https://github.com/srinithi0406/ShopZ" target="_blank"
+                            class="cta-button secondary">GitHub Code</a>
                     </div>
                 </div>
 
@@ -119,19 +175,26 @@
 
         <section id="achievements" class="content-section">
             <h2>Awards & Recognition</h2>
-            
+
             <ul class="achievements-list">
                 <li class="achievement-item">
+                    <span class="achievement-title">Finalist - Top 8 Teams, South Zone</span>
+                    <span class="achievement-details">IIT KGP × SNU Chennai Hackathon.</span>
+                </li>
+                <li class="achievement-item">
                     <span class="achievement-title">Best First Year Team Award</span>
-                    <span class="achievement-details">CodHer'25 National Level Hackathon, Anna University, Chennai.</span>
+                    <span class="achievement-details">CodHer'25 National Level Hackathon, Anna University,
+                        Chennai.</span>
                 </li>
                 <li class="achievement-item">
                     <span class="achievement-title">First Prize in CodeCrunch</span>
-                    <span class="achievement-details">MindSpark'25, Sri Ramachandra Faculty of Engineering and Technology.</span>
+                    <span class="achievement-details">MindSpark'25, Sri Ramachandra Faculty of Engineering and
+                        Technology.</span>
                 </li>
                 <li class="achievement-item">
                     <span class="achievement-title">Consolation Prize (Rs. 5,000)</span>
-                    <span class="achievement-details">9th State Level Quiz Competition, National Engineering College.</span>
+                    <span class="achievement-details">9th State Level Quiz Competition, National Engineering
+                        College.</span>
                 </li>
                 <li class="achievement-item">
                     <span class="achievement-title">District Winner & State Level Presentation</span>
@@ -146,58 +209,107 @@
 
         <section id="experience" class="content-section">
             <h2>Experience</h2>
-            
+
             <div class="experience-grid">
-                
-                <div class="experience-card">
-                    <h3 class="role-title">Data Science Intern</h3>
-                    <p class="company-date">NetworkGeek Academy (Remote) | Jun 2025 - Jul 2025</p>
-                    <ul class="experience-bullets">
-                        <li>Built a churn prediction model on Kaggle, achieving 93% accuracy using Python, Pandas, and ML algorithms.</li>
-                        <li>Gained exposure to neural networks, transformers, and the end-to-end data science workflow.</li>
-                    </ul>
-                </div>
 
                 <div class="experience-card">
                     <h3 class="role-title">Web Development Intern</h3>
                     <p class="company-date">PrismStudios (Remote) | Jun 2025 - Jul 2025</p>
                     <ul class="experience-bullets">
-                        <li>Developed LeftOverLove — a food-sharing platform using HTML, CSS, JS, and Firebase Realtime DB/Auth.</li>
-                        <li>Selected as <b>Best Performer</b> among all interns based on task performance and final project delivery.</li>
+                        <li>Developed LeftOverLove — a food-sharing platform using HTML, CSS, JS, and Firebase Realtime
+                            DB/Auth.</li>
+                        <li>Selected as <b>Best Performer</b> among all interns based on task performance and final
+                            project delivery.</li>
+                    </ul>
+                </div>
+
+
+                <div class="experience-card">
+                    <h3 class="role-title">Data Science Intern</h3>
+                    <p class="company-date">NetworkGeek Academy (Remote) | Jun 2025 - Jul 2025</p>
+                    <ul class="experience-bullets">
+                        <li>Built a churn prediction model on Kaggle, achieving 93% accuracy using Python, Pandas, and
+                            ML algorithms.</li>
+                        <li>Gained exposure to neural networks, transformers, and the end-to-end data science workflow.
+                        </li>
                     </ul>
                 </div>
 
                 <div class="experience-card">
-                    <h3 class="role-title">Vice-Head Girl</h3>
-                    <p class="company-date">PSC School (Grades X & XI)</p>
+                    <h3 class="role-title">Open Source Contributor</h3>
+                    <p class="company-date">GirlScript Summer of Code (GSSoC '25) | Oct 2025</p>
                     <ul class="experience-bullets">
-                        <li>Demonstrated <b>leadership and organizational skills</b> by managing school events and student body coordination.</li>
-                        <li>Served as a primary link between faculty and students, enhancing communication and mentorship.</li>
+                        <li>Contributed to open-source projects during GSSoC 2025 by identifying critical bugs, raising
+                            well-documented issues, and contributing fixes through reviewed and merged pull requests.
+                        </li>
+                        <li>Collaborated with maintainers via issue discussions and code reviews to align with project
+                            expectations.</li>
                     </ul>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section id="clubs" class="content-section">
+            <h2>Clubs & Leadership</h2>
+
+            <div class="clubs-grid">
+
+                <div class="club-card">
+                    <div class="club-icon-wrap">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <span class="club-role-badge">Event Documentation Head</span>
+                    <h3 class="club-name">Google Developer Groups on Campus (GDGoC), SNUC</h3>
+                    <p class="club-description">Leading event documentation efforts — capturing, curating, and
+                        publishing content across flagship developer events and workshops.</p>
+                </div>
+
+                <div class="club-card">
+                    <div class="club-icon-wrap">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <span class="club-role-badge">Senior Core</span>
+                    <h3 class="club-name">Cognition — Quiz Club</h3>
+                    <p class="club-description">Curating quiz content and organizing inter-college quizzing events as a
+                        senior core member of the university quiz club.</p>
+                </div>
+
+                <div class="club-card">
+                    <div class="club-icon-wrap">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <span class="club-role-badge">Vice-Head Girl</span>
+                    <h3 class="club-name">PSC School (Grades X & XI)</h3>
+                    <p class="club-description">Demonstrated leadership and organizational skills by managing school
+                        events and student body coordination. Served as a primary link between faculty and students.</p>
                 </div>
 
             </div>
         </section>
 
-
         <section id="contact" class="content-section contact-section">
             <h2>Get In Touch</h2>
             <p class="contact-prompt">I'm currently looking for new opportunities. Feel free to connect!</p>
-            
+
             <div class="contact-links">
-                <a href="https://github.com/srinithi0406" target="_blank" aria-label="GitHub Profile" class="contact-icon-link">
+                <a href="https://github.com/srinithi0406" target="_blank" aria-label="GitHub Profile"
+                    class="contact-icon-link">
                     <i class="fab fa-github"></i>
                 </a>
-                
-                <a href="https://www.linkedin.com/in/srinithi-a-aba050330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn Profile" class="contact-icon-link">
+
+                <a href="https://www.linkedin.com/in/srinithi-a-aba050330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank" aria-label="LinkedIn Profile" class="contact-icon-link">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                
+
                 <a href="mailto: itsmesrinithi@gmail.com" aria-label="Send Email" class="contact-icon-link">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
-            
+
             <p class="copyright">Designed and Developed by Srinithi &copy; 2025</p>
         </section>
         <div class="sparkle-container" id="sparkle-container"></div>
@@ -205,4 +317,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

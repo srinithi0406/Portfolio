@@ -63,7 +63,7 @@ gsap.utils.toArray(".timeline-item").forEach(item => {
         scrollTrigger: {
             trigger: item,
             start: "top 85%", 
-            toggleActions: "play none none none" 
+            toggleActions: "play none none reverse" 
         }
     });
 
@@ -74,7 +74,7 @@ gsap.utils.toArray(".timeline-item").forEach(item => {
         scrollTrigger: {
             trigger: item,
             start: "top 85%",
-            toggleActions: "play none none none"
+            toggleActions: "play none none reverse"
         }
     });
 });
@@ -90,7 +90,7 @@ gsap.utils.toArray(".project-card").forEach((card, i) => {
         scrollTrigger: {
             trigger: card,
             start: "top 85%", 
-            toggleActions: "play none none none" 
+            toggleActions: "play none none reverse" 
         }
     });
 });
