@@ -141,4 +141,117 @@ document.addEventListener('DOMContentLoaded', () => {
             navContainer.classList.remove('open');
         });
     });
+
+    // Experience Carousel Logic
+    const expCarousel = document.querySelector('.experience-grid');
+    const expPrevBtn = document.querySelector('#experience-carousel-container .prev');
+    const expNextBtn = document.querySelector('#experience-carousel-container .next');
+
+    if (expCarousel && expPrevBtn && expNextBtn) {
+        expPrevBtn.addEventListener('click', () => {
+            const cardWidth = expCarousel.querySelector('.experience-card').offsetWidth;
+            expCarousel.scrollBy({ left: -(cardWidth + 30), behavior: 'smooth' });
+        });
+
+        expNextBtn.addEventListener('click', () => {
+            const cardWidth = expCarousel.querySelector('.experience-card').offsetWidth;
+            expCarousel.scrollBy({ left: cardWidth + 30, behavior: 'smooth' });
+        });
+    }
 });
+
+// Space Background Animation
+const canvas = document.getElementById('space-background');
+if (canvas) {
+    const ctx = canvas.getContext('2d');
+    let width, height;
+    let stars = [];
+    const numStars = 1000;
+
+    function resize() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+    }
+    
+    window.addEventListener('resize', resize);
+    resize();
+
+    class Star {
+        constructor() {
+            this.x = (Math.random() - 0.5) * width * 2;
+            this.y = (Math.random() - 0.5) * height * 2;
+            this.z = Math.random() * width + 100;
+            this.radius = Math.random() * 1.5 + 0.5;
+        }
+
+        update() {
+            this.z -= 3; // Z speed
+            if (this.z <= 0) {
+                this.x = (Math.random() - 0.5) * width * 2;
+                this.y = (Math.random() - 0.5) * height * 2;
+                this.z = width;
+            }
+        }
+
+        draw() {
+            let x = (this.x / this.z) * width + width / 2;
+            let y = (this.y / this.z) * width + height / 2;
+            let size = Math.min(this.radius * (width / this.z) * 0.5, 3.5);
+            let opacity = 1 - (this.z / width);
+
+            // only draw if within screen
+            if (x >= 0 && x <= width && y >= 0 && y <= height && this.z > 0) {
+                ctx.beginPath();
+                ctx.arc(x, y, Math.max(0, size), 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(224, 231, 255, ${opacity})`; // Match text-light color
+                ctx.fill();
+            }
+        }
+    }
+
+    for (let i = 0; i < numStars; i++) {
+        stars.push(new Star());
+    }
+
+    // Interactive mouse tracking for parallax
+    let mouseX = 0;
+    let mouseY = 0;
+    let targetMouseX = 0;
+    let targetMouseY = 0;
+    
+    document.addEventListener('mousemove', (e) => {
+        targetMouseX = (e.clientX - width / 2) * 0.05;
+        targetMouseY = (e.clientY - height / 2) * 0.05;
+    });
+
+    function animate() {
+        // Smooth mouse interpolation
+        mouseX += (targetMouseX - mouseX) * 0.1;
+        mouseY += (targetMouseY - mouseY) * 0.1;
+
+        // Clear with slight transparency for a subtle trailing effect (nebula feel)
+        ctx.fillStyle = 'rgba(2, 1, 10, 0.3)'; // Match dark base color
+        ctx.fillRect(0, 0, width, height);
+
+        // Optional subtle nebula gradient overlay
+        let gradient = ctx.createRadialGradient(width/2 - mouseX*10, height/2 - mouseY*10, 0, width/2, height/2, width);
+        gradient.addColorStop(0, 'rgba(36, 176, 158, 0.02)');
+        gradient.addColorStop(1, 'rgba(9, 11, 26, 0)');
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, width, height);
+
+        stars.forEach(star => {
+            // Slight pan based on mouse
+            star.x -= mouseX * 0.2;
+            star.y -= mouseY * 0.2;
+            
+            star.update();
+            star.draw();
+        });
+
+        requestAnimationFrame(animate);
+    }
+    animate();
+}

@@ -9,10 +9,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Felipa&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 
 <body>
+    <canvas id="space-background"></canvas>
 
     <header class="navbar">
         <div class="logo">Srinithi</div>
@@ -36,10 +39,11 @@
                 <img id="avatar" src="./assets/avatar.gif" alt="Srinithi's Avatar Waving Hi">
             </div>
             <div class="hero-right">
-                <h1 class="hero-text">Hi, I'm <span class="highlight-text">Srinithi</span> 👋</h1>
+                <h1 class="hero-text">Hi, I'm <span class="highlight-text">Srinithi</span><span
+                        class="blinking-cursor">|</span></h1>
                 <p class="intro-text">
-                    I'm an aspiring developer with experience in <b>full-stack web development</b> and <b>data
-                        science</b>, passionate
+                    I'm an aspiring developer with experience in <b>Full-stack web development</b> and <b>Data
+                        Science</b>, passionate
                     about building intelligent and dynamic applications.
                     I enjoy working with modern technologies to create scalable, real-world solutions.
                 </p>
@@ -55,7 +59,7 @@
                     <div class="timeline-content">
                         <h3>Shiv Nadar University (2024 - Present)</h3>
                         <p><strong>B.Tech in Artificial Intelligence & Data Science</strong></p>
-                        <p class="grade">Current GPA: 9.439 / 10.0</p>
+                        <p class="grade">Current GPA: 9.488 / 10.0</p>
                         <p class="description">Focusing on Full-Stack Development, Data Science, and DSA.</p>
                     </div>
                 </div>
@@ -85,6 +89,192 @@
             </div>
         </section>
 
+        <section id="skills" class="content-section">
+            <h2>Tech Stack</h2>
+
+            <div class="skills-wrapper">
+
+                <h3 class="skills-category">Programming Languages</h3>
+                <div class="marquee-container right-to-left">
+                    <div class="marquee-content">
+
+                        <!-- Duplicated for infinite effect -->
+                        <span class="skill-pill"><i class="devicon-python-plain colored"></i> Python</span>
+                        <span class="skill-pill"><i class="devicon-java-plain colored"></i> Java</span>
+                        <span class="skill-pill"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+                        <span class="skill-pill"><i class="devicon-c-plain colored"></i> C</span>
+
+                        <span class="skill-pill"><i class="devicon-python-plain colored"></i> Python</span>
+                        <span class="skill-pill"><i class="devicon-java-plain colored"></i> Java</span>
+                        <span class="skill-pill"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+                        <span class="skill-pill"><i class="devicon-c-plain colored"></i> C</span>
+
+
+                        <!-- Duplicated for infinite effect -->
+                        <span class="skill-pill"><i class="devicon-python-plain colored"></i> Python</span>
+                        <span class="skill-pill"><i class="devicon-java-plain colored"></i> Java</span>
+                        <span class="skill-pill"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+                        <span class="skill-pill"><i class="devicon-c-plain colored"></i> C</span>
+
+                        <span class="skill-pill"><i class="devicon-python-plain colored"></i> Python</span>
+                        <span class="skill-pill"><i class="devicon-java-plain colored"></i> Java</span>
+                        <span class="skill-pill"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+                        <span class="skill-pill"><i class="devicon-c-plain colored"></i> C</span>
+                    </div>
+                </div>
+
+                <h3 class="skills-category">Web Development</h3>
+                <div class="marquee-container left-to-right">
+                    <div class="marquee-content">
+
+                        <span class="skill-pill"><i class="devicon-html5-plain colored"></i> HTML</span>
+                        <span class="skill-pill"><i class="devicon-css3-plain colored"></i> CSS</span>
+                        <span class="skill-pill"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                        <span class="skill-pill"><i class="devicon-react-original colored"></i> React</span>
+                        <span class="skill-pill"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
+                        <span class="skill-pill"><i class="devicon-flask-original colored"></i> Flask</span>
+                        <span class="skill-pill"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                        <span class="skill-pill"><i class="devicon-express-original colored"></i> Express</span>
+                        <span class="skill-pill"><i class="fas fa-server" style="color:var(--color-highlight-cyan)"></i>
+                            REST APIs</span>
+                        <span class="skill-pill"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+                        <span class="skill-pill"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                        <span class="skill-pill"><i class="devicon-sqlite-plain colored"></i> SQLite</span>
+                        <span class="skill-pill"><i class="devicon-firebase-plain colored"></i> Firebase</span>
+                        <span class="skill-pill"><i class="devicon-supabase-plain colored"></i> Supabase</span>
+
+                        <span class="skill-pill"><i class="devicon-html5-plain colored"></i> HTML</span>
+                        <span class="skill-pill"><i class="devicon-css3-plain colored"></i> CSS</span>
+                        <span class="skill-pill"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                        <span class="skill-pill"><i class="devicon-react-original colored"></i> React</span>
+                        <span class="skill-pill"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
+                        <span class="skill-pill"><i class="devicon-flask-original colored"></i> Flask</span>
+                        <span class="skill-pill"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                        <span class="skill-pill"><i class="devicon-express-original colored"></i> Express</span>
+                        <span class="skill-pill"><i class="fas fa-server" style="color:var(--color-highlight-cyan)"></i>
+                            REST APIs</span>
+                        <span class="skill-pill"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+                        <span class="skill-pill"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                        <span class="skill-pill"><i class="devicon-sqlite-plain colored"></i> SQLite</span>
+                        <span class="skill-pill"><i class="devicon-firebase-plain colored"></i> Firebase</span>
+                        <span class="skill-pill"><i class="devicon-supabase-plain colored"></i> Supabase</span>
+
+
+                        <span class="skill-pill"><i class="devicon-html5-plain colored"></i> HTML</span>
+                        <span class="skill-pill"><i class="devicon-css3-plain colored"></i> CSS</span>
+                        <span class="skill-pill"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                        <span class="skill-pill"><i class="devicon-react-original colored"></i> React</span>
+                        <span class="skill-pill"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
+                        <span class="skill-pill"><i class="devicon-flask-original colored"></i> Flask</span>
+                        <span class="skill-pill"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                        <span class="skill-pill"><i class="devicon-express-original colored"></i> Express</span>
+                        <span class="skill-pill"><i class="fas fa-server" style="color:var(--color-highlight-cyan)"></i>
+                            REST APIs</span>
+                        <span class="skill-pill"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+                        <span class="skill-pill"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                        <span class="skill-pill"><i class="devicon-sqlite-plain colored"></i> SQLite</span>
+                        <span class="skill-pill"><i class="devicon-firebase-plain colored"></i> Firebase</span>
+                        <span class="skill-pill"><i class="devicon-supabase-plain colored"></i> Supabase</span>
+
+                        <span class="skill-pill"><i class="devicon-html5-plain colored"></i> HTML</span>
+                        <span class="skill-pill"><i class="devicon-css3-plain colored"></i> CSS</span>
+                        <span class="skill-pill"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                        <span class="skill-pill"><i class="devicon-react-original colored"></i> React</span>
+                        <span class="skill-pill"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
+                        <span class="skill-pill"><i class="devicon-flask-original colored"></i> Flask</span>
+                        <span class="skill-pill"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                        <span class="skill-pill"><i class="devicon-express-original colored"></i> Express</span>
+                        <span class="skill-pill"><i class="fas fa-server" style="color:var(--color-highlight-cyan)"></i>
+                            REST APIs</span>
+                        <span class="skill-pill"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+                        <span class="skill-pill"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                        <span class="skill-pill"><i class="devicon-sqlite-plain colored"></i> SQLite</span>
+                        <span class="skill-pill"><i class="devicon-firebase-plain colored"></i> Firebase</span>
+                        <span class="skill-pill"><i class="devicon-supabase-plain colored"></i> Supabase</span>
+                    </div>
+                </div>
+
+                <h3 class="skills-category">AI / ML</h3>
+                <div class="marquee-container left-to-right">
+                    <div class="marquee-content">
+
+                        <span class="skill-pill"><i class="devicon-scikitlearn-plain colored"></i> Scikit-learn</span>
+                        <span class="skill-pill"><i class="devicon-pandas-plain colored"></i> Pandas</span>
+                        <span class="skill-pill"><i class="devicon-numpy-plain colored"></i> NumPy</span>
+                        <span class="skill-pill"><i class="devicon-matplotlib-plain colored"></i> Matplotlib</span>
+                        <span class="skill-pill"><i class="fas fa-chart-line"
+                                style="color:var(--color-highlight-cyan)"></i> seaborn</span>
+                        <span class="skill-pill"><i class="devicon-pytorch-original colored"></i> PyTorch</span>
+                        <span class="skill-pill"><i class="devicon-tensorflow-original colored"></i> TensorFlow</span>
+
+                        <span class="skill-pill"><i class="devicon-scikitlearn-plain colored"></i> Scikit-learn</span>
+                        <span class="skill-pill"><i class="devicon-pandas-plain colored"></i> Pandas</span>
+                        <span class="skill-pill"><i class="devicon-numpy-plain colored"></i> NumPy</span>
+                        <span class="skill-pill"><i class="devicon-matplotlib-plain colored"></i> Matplotlib</span>
+                        <span class="skill-pill"><i class="fas fa-chart-line"
+                                style="color:var(--color-highlight-cyan)"></i> seaborn</span>
+                        <span class="skill-pill"><i class="devicon-pytorch-original colored"></i> PyTorch</span>
+                        <span class="skill-pill"><i class="devicon-tensorflow-original colored"></i> TensorFlow</span>
+
+
+                        <span class="skill-pill"><i class="devicon-scikitlearn-plain colored"></i> Scikit-learn</span>
+                        <span class="skill-pill"><i class="devicon-pandas-plain colored"></i> Pandas</span>
+                        <span class="skill-pill"><i class="devicon-numpy-plain colored"></i> NumPy</span>
+                        <span class="skill-pill"><i class="devicon-matplotlib-plain colored"></i> Matplotlib</span>
+                        <span class="skill-pill"><i class="fas fa-chart-line"
+                                style="color:var(--color-highlight-cyan)"></i> seaborn</span>
+                        <span class="skill-pill"><i class="devicon-pytorch-original colored"></i> PyTorch</span>
+                        <span class="skill-pill"><i class="devicon-tensorflow-original colored"></i> TensorFlow</span>
+
+                        <span class="skill-pill"><i class="devicon-scikitlearn-plain colored"></i> Scikit-learn</span>
+                        <span class="skill-pill"><i class="devicon-pandas-plain colored"></i> Pandas</span>
+                        <span class="skill-pill"><i class="devicon-numpy-plain colored"></i> NumPy</span>
+                        <span class="skill-pill"><i class="devicon-matplotlib-plain colored"></i> Matplotlib</span>
+                        <span class="skill-pill"><i class="fas fa-chart-line"
+                                style="color:var(--color-highlight-cyan)"></i> seaborn</span>
+                        <span class="skill-pill"><i class="devicon-pytorch-original colored"></i> PyTorch</span>
+                        <span class="skill-pill"><i class="devicon-tensorflow-original colored"></i> TensorFlow</span>
+                    </div>
+                </div>
+
+                <h3 class="skills-category">Tools & Platforms</h3>
+                <div class="marquee-container right-to-left">
+                    <div class="marquee-content">
+
+                        <span class="skill-pill"><i class="devicon-git-plain colored"></i> Git</span>
+                        <span class="skill-pill"><i class="devicon-github-original colored"></i> GitHub</span>
+                        <span class="skill-pill"><i class="devicon-postman-plain colored"></i> Postman</span>
+                        <span class="skill-pill"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+                        <span class="skill-pill"><i class="fas fa-chart-pie"
+                                style="color:var(--color-highlight-cyan)"></i> Tableau</span>
+
+                        <span class="skill-pill"><i class="devicon-git-plain colored"></i> Git</span>
+                        <span class="skill-pill"><i class="devicon-github-original colored"></i> GitHub</span>
+                        <span class="skill-pill"><i class="devicon-postman-plain colored"></i> Postman</span>
+                        <span class="skill-pill"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+                        <span class="skill-pill"><i class="fas fa-chart-pie"
+                                style="color:var(--color-highlight-cyan)"></i> Tableau</span>
+
+
+                        <span class="skill-pill"><i class="devicon-git-plain colored"></i> Git</span>
+                        <span class="skill-pill"><i class="devicon-github-original colored"></i> GitHub</span>
+                        <span class="skill-pill"><i class="devicon-postman-plain colored"></i> Postman</span>
+                        <span class="skill-pill"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+                        <span class="skill-pill"><i class="fas fa-chart-pie"
+                                style="color:var(--color-highlight-cyan)"></i> Tableau</span>
+
+                        <span class="skill-pill"><i class="devicon-git-plain colored"></i> Git</span>
+                        <span class="skill-pill"><i class="devicon-github-original colored"></i> GitHub</span>
+                        <span class="skill-pill"><i class="devicon-postman-plain colored"></i> Postman</span>
+                        <span class="skill-pill"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+                        <span class="skill-pill"><i class="fas fa-chart-pie"
+                                style="color:var(--color-highlight-cyan)"></i> Tableau</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <section id="projects" class="content-section">
             <h2>Featured Projects</h2>
 
@@ -92,7 +282,7 @@
 
                 <div class="project-card">
                     <h3>LeftOverLove - Local Food Sharing Web App</h3>
-                    <p class="tech-stack">HTML | CSS (SASS) | JavaScript | Firebase</p>
+                    <p class="tech-stack">React | JS | CSS | GSAP | Firebase</p>
                     <p class="description">Developed a responsive web app to minimize food waste by enabling users to
                         post and claim surplus food.
                         Implemented user authentication, real-time food listings with filters, post expiry logic, and
@@ -157,16 +347,31 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>ShopZ: E-Commerce Site</h3>
-                    <p class="tech-stack">HTML | CSS | JavaScript | local Storage</p>
-                    <p class="description">Developed a fully responsive e-commerce checkout UI focusing on user
-                        experience. The project uses Vanilla JavaScript to handle dynamic cart updates and ensures data
-                        integrity.</p>
+                    <h3>ShopZ - E-Commerce Platform</h3>
+                    <p class="tech-stack">React.js | Tailwind CSS | Node.js | Express.js | MongoDB | Razorpay</p>
+                    <p class="description">
+                        Built a responsive full-stack e-commerce platform with secure JWT authentication, cart/wishlist
+                        management, and Razorpay integration. Features a protected admin dashboard with real-time
+                        analytics for managing product inventory, tracking sales, and fulfilling user orders.
+                    </p>
                     <div class="project-links">
-                        <a href="https://shop-z-beta.vercel.app/" target="_blank" class="cta-button primary">View Live
-                            Demo</a>
-                        <a href="https://github.com/srinithi0406/ShopZ" target="_blank"
+                        <a href="https://github.com/srinithi0406/ShopZ_Full_stack" target="_blank"
                             class="cta-button secondary">GitHub Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>VidEdu – Automated Learning Video Generation</h3>
+                    <p class="tech-stack">Gemini API | Manim | gTTS | Streamlit | SQLite</p>
+                    <p class="description">
+                        Designed and built an AI-driven automated learning platform that converts coding topics into
+                        structured educational videos, reducing manual content creation effort by nearly 80%.
+                        Integrated personalized learning features including interactive quizzes, challenges, and coding
+                        exercises, to assess learner understanding and improve engagement.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/srinithi0406/videdu" target="_blank" class="cta-button primary">View
+                            GitHub Code</a>
                     </div>
                 </div>
 
@@ -178,8 +383,12 @@
 
             <ul class="achievements-list">
                 <li class="achievement-item">
-                    <span class="achievement-title">Finalist - Top 8 Teams, South Zone</span>
+                    <span class="achievement-title">Finalist - Top 5 Teams, South Zone</span>
                     <span class="achievement-details">IIT KGP × SNU Chennai Hackathon.</span>
+                </li>
+                <li class="achievement-item">
+                    <span class="achievement-title">Top 20 Teams</span>
+                    <span class="achievement-details">Guidewire DevTrails Hackathon.</span>
                 </li>
                 <li class="achievement-item">
                     <span class="achievement-title">Best First Year Team Award</span>
@@ -210,45 +419,69 @@
         <section id="experience" class="content-section">
             <h2>Experience</h2>
 
-            <div class="experience-grid">
+            <div class="carousel-container" id="experience-carousel-container">
+                <button class="carousel-btn prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                <div class="experience-grid">
 
-                <div class="experience-card">
-                    <h3 class="role-title">Web Development Intern</h3>
-                    <p class="company-date">PrismStudios (Remote) | Jun 2025 - Jul 2025</p>
-                    <ul class="experience-bullets">
-                        <li>Developed LeftOverLove — a food-sharing platform using HTML, CSS, JS, and Firebase Realtime
-                            DB/Auth.</li>
-                        <li>Selected as <b>Best Performer</b> among all interns based on task performance and final
-                            project delivery.</li>
-                    </ul>
+                    <div class="experience-card">
+                        <h3 class="role-title">GenAI Intern</h3>
+                        <p class="company-date">IITM Pravartak | May 2026 – Present</p>
+                        <ul class="experience-bullets">
+                            <li>Enhanced an Agentic RAG pipeline by resolving functional issues, improving response
+                                quality
+                                and system reliability.</li>
+                            <li>Implemented execution tracing, structured tool outputs, and evaluation workflows to
+                                improve
+                                debugging, response consistency, and pipeline reliability.</li>
+                            <li>Developed automated data ingestion pipelines and an interactive analytical interface.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-card">
+                        <h3 class="role-title">Web Development Intern</h3>
+                        <p class="company-date">PrismStudios (Remote) | Jun 2025 - Jul 2025</p>
+                        <ul class="experience-bullets">
+                            <li>Developed LeftOverLove — a food-sharing platform using HTML, CSS, JS, and Firebase
+                                Realtime
+                                DB/Auth.</li>
+                            <li>Selected as <b>Best Performer</b> among all interns based on task performance and final
+                                project delivery.</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="experience-card">
+                        <h3 class="role-title">Data Science Intern</h3>
+                        <p class="company-date">NetworkGeek Academy (Remote) | Jun 2025 - Jul 2025</p>
+                        <ul class="experience-bullets">
+                            <li>Built a churn prediction model on Kaggle, achieving 93% accuracy using Python, Pandas,
+                                and
+                                ML algorithms.</li>
+                            <li>Gained exposure to neural networks, transformers, and the end-to-end data science
+                                workflow.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-card">
+                        <h3 class="role-title">Open Source Contributor</h3>
+                        <p class="company-date">GirlScript Summer of Code (GSSoC '25) | Oct 2025</p>
+                        <ul class="experience-bullets">
+                            <li>Contributed to open-source projects during GSSoC 2025 by identifying critical bugs,
+                                raising
+                                well-documented issues, and contributing fixes through reviewed and merged pull
+                                requests.
+                            </li>
+                            <li>Collaborated with maintainers via issue discussions and code reviews to align with
+                                project
+                                expectations.</li>
+                        </ul>
+                    </div>
+
+
                 </div>
-
-
-                <div class="experience-card">
-                    <h3 class="role-title">Data Science Intern</h3>
-                    <p class="company-date">NetworkGeek Academy (Remote) | Jun 2025 - Jul 2025</p>
-                    <ul class="experience-bullets">
-                        <li>Built a churn prediction model on Kaggle, achieving 93% accuracy using Python, Pandas, and
-                            ML algorithms.</li>
-                        <li>Gained exposure to neural networks, transformers, and the end-to-end data science workflow.
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="experience-card">
-                    <h3 class="role-title">Open Source Contributor</h3>
-                    <p class="company-date">GirlScript Summer of Code (GSSoC '25) | Oct 2025</p>
-                    <ul class="experience-bullets">
-                        <li>Contributed to open-source projects during GSSoC 2025 by identifying critical bugs, raising
-                            well-documented issues, and contributing fixes through reviewed and merged pull requests.
-                        </li>
-                        <li>Collaborated with maintainers via issue discussions and code reviews to align with project
-                            expectations.</li>
-                    </ul>
-                </div>
-
-
-
+                <button class="carousel-btn next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
             </div>
         </section>
 

@@ -1,10 +1,10 @@
 :root {
-    --color-dark-base: #03001C; /* Very dark blue/black base */
-    --color-deep-blue: #0A043C; /* Deep, rich blue */
-    --color-violet-accent: #2A045C; /* Dark violet for the gradient end */
-    --color-text-light: #E0E7FF; /* Off-white for body text */
-    --color-highlight-cyan: #2DD4BF; /* Vibrant highlight color */
-    --color-text-faded: #9CA3AF; /* Faded text for secondary info */
+    --color-dark-base: #02010A; /* Very dark blue/black base */
+    --color-deep-blue: #090B1A; /* Deep, rich blue */
+    --color-violet-accent: #151030; /* Dark violet for the gradient end */
+    --color-text-light: #F8FAFC; /* Off-white for body text */
+    --color-highlight-cyan: #24B09E; /* Vibrant highlight color */
+    --color-text-faded: #94A3B8; /* Faded text for secondary info */
     --font-smooth: 'Poppins', sans-serif; /* Smooth-looking font */
 }
 
@@ -17,7 +17,7 @@
 
 body {
     font-family: var(--font-smooth);
-    color: var(--color-text-light);
+    color: var(--color-text-faded);
     line-height: 1.6;
     background: linear-gradient(180deg, var(--color-dark-base) 0%, var(--color-deep-blue) 40%, var(--color-violet-accent) 100%);
     background-attachment: fixed; 
@@ -34,10 +34,13 @@ h1, h2, h3 {
     font-size: clamp(2.5rem, 6vw, 5rem); 
     font-weight: 800;
     letter-spacing: -0.05em;
-    color: var(--color-text-light);
+    color: var(--color-text-faded);
 }
 
 .highlight-text {
+    font-family: 'Felipa', cursive;
+    font-weight: 900;
+    letter-spacing: 0.08em;
     color: var(--color-highlight-cyan);
 }
 
@@ -51,7 +54,7 @@ h1, h2, h3 {
 .intro-text b, 
 .intro-text strong {
     font-weight: 600;
-    color: var(--color-text-light);
+    color: var(--color-text-faded);
 }
 
 /* Navbar Styling */
@@ -64,19 +67,21 @@ h1, h2, h3 {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    background-color: rgba(3, 0, 28, 0.8); 
+    background-color: rgba(2, 1, 10, 0.8); 
     backdrop-filter: blur(5px);
     z-index: 1000;
 }
 
 .navbar .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-family: 'Felipa', cursive;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
     color: var(--color-highlight-cyan);
 }
 
 .nav-link {
-    color: var(--color-text-light);
+    color: var(--color-text-faded);
     text-decoration: none;
     margin-left: 2rem;
     font-weight: 400;
@@ -106,7 +111,7 @@ h1, h2, h3 {
     max-width: 100%;
     height: auto;
     border-radius: 50%; 
-    box-shadow: 0 0 50px rgba(45, 212, 191, 0.3); 
+    box-shadow: 0 0 50px rgba(36, 176, 158, 0.3); 
     display: block;
 }
 
@@ -114,7 +119,7 @@ h1, h2, h3 {
 .content-section {
     min-height: 80vh;
     padding: 5rem 5%;
-    border-top: 1px solid rgba(45, 212, 191, 0.1); 
+    border-top: 1px solid rgba(36, 176, 158, 0.1); 
 }
 
 
@@ -157,7 +162,7 @@ h1, h2, h3 {
     border-radius: 50%;
     transform: translateX(-50%);
     z-index: 10;
-    box-shadow: 0 0 15px rgba(45, 212, 191, 0.5); 
+    box-shadow: 0 0 15px rgba(36, 176, 158, 0.5); 
 }
 
 /* The content card */
@@ -171,7 +176,7 @@ h1, h2, h3 {
 }
 
 .timeline-content h3 {
-    color: var(--color-text-light);
+    color: var(--color-text-faded);
     margin-bottom: 0.5rem;
 }
 
@@ -207,7 +212,7 @@ h1, h2, h3 {
     background-color: var(--color-deep-blue);
     padding: 2.5rem;
     border-radius: 10px;
-    border: 1px solid rgba(45, 212, 191, 0.15); 
+    border: 1px solid rgba(36, 176, 158, 0.15); 
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -227,7 +232,7 @@ h1, h2, h3 {
 
 .project-card:hover {
     transform: translateY(-5px); 
-    box-shadow: 0 12px 40px rgba(45, 212, 191, 0.2); 
+    box-shadow: 0 12px 40px rgba(36, 176, 158, 0.2); 
 }
 
 .project-card h3 {
@@ -244,7 +249,7 @@ h1, h2, h3 {
 }
 
 .description {
-    color: var(--color-text-light);
+    color: var(--color-text-faded);
     margin-bottom: 1.5rem;
 }
 
@@ -280,7 +285,7 @@ h1, h2, h3 {
 }
 
 .cta-button.secondary:hover {
-    background-color: rgba(45, 212, 191, 0.1); 
+    background-color: rgba(36, 176, 158, 0.1); 
 }
 
 
@@ -314,7 +319,7 @@ h1, h2, h3 {
 
 .contact-icon-link {
     font-size: 2.5rem; 
-    color: var(--color-text-light);
+    color: var(--color-text-faded);
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -357,7 +362,7 @@ h1, h2, h3 {
 .achievement-title {
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--color-text-light);
+    color: var(--color-text-faded);
     margin-bottom: 0.3rem;
 }
 
@@ -368,27 +373,92 @@ h1, h2, h3 {
 }
 
 
-/*Experience Section Styles */
-.experience-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 30px;
+/* Carousel & Experience Section Styles */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
     margin-top: 3rem;
 }
 
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(9, 11, 26, 0.8);
+    border: 1px solid var(--color-highlight-cyan);
+    color: var(--color-highlight-cyan);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background: var(--color-highlight-cyan);
+    color: var(--color-dark-base);
+}
+
+.carousel-btn.prev {
+    left: -15px;
+}
+
+.carousel-btn.next {
+    right: -15px;
+}
+
+.experience-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: 30px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 100%;
+}
+
+.experience-grid::-webkit-scrollbar {
+    display: none;
+}
+
 .experience-card {
+    scroll-snap-align: start;
+    flex: 0 0 100%;
     background-color: var(--color-deep-blue);
     padding: 2rem;
     border-radius: 10px;
     border-top: 3px solid var(--color-highlight-cyan); 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%; 
+    height: auto; 
+}
+
+@media (min-width: 768px) {
+    .experience-card {
+        flex: 0 0 calc(50% - 15px);
+    }
+    .carousel-btn.prev { left: -30px; }
+    .carousel-btn.next { right: -30px; }
+}
+
+@media (min-width: 1024px) {
+    .experience-card {
+        flex: 0 0 calc(33.333% - 20px);
+    }
 }
 
 .experience-card:hover {
     transform: translateY(-5px); 
-    box-shadow: 0 12px 40px rgba(45, 212, 191, 0.2);
+    box-shadow: 0 12px 40px rgba(36, 176, 158, 0.2);
 }
 
 .role-title {
@@ -414,7 +484,7 @@ h1, h2, h3 {
     position: relative;
     padding-left: 1.5rem; 
     margin-bottom: 10px;
-    color: var(--color-text-light);
+    color: var(--color-text-faded);
     font-size: 1rem;
     line-height: 1.4;
 }
@@ -442,10 +512,10 @@ h1, h2, h3 {
 }
 
 .club-card {
-    background: linear-gradient(145deg, rgba(10, 4, 60, 0.9), rgba(42, 4, 92, 0.45));
+    background: linear-gradient(145deg, rgba(9, 11, 26, 0.9), rgba(21, 16, 48, 0.45));
     padding: 2.2rem 2rem;
     border-radius: 14px;
-    border: 1px solid rgba(45, 212, 191, 0.12);
+    border: 1px solid rgba(36, 176, 158, 0.12);
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
     transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
     display: flex;
@@ -462,7 +532,7 @@ h1, h2, h3 {
     right: -30%;
     width: 200px;
     height: 200px;
-    background: radial-gradient(circle, rgba(45, 212, 191, 0.06) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(36, 176, 158, 0.06) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
     transition: opacity 0.4s ease;
@@ -470,8 +540,8 @@ h1, h2, h3 {
 
 .club-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 14px 44px rgba(45, 212, 191, 0.15);
-    border-color: rgba(45, 212, 191, 0.35);
+    box-shadow: 0 14px 44px rgba(36, 176, 158, 0.15);
+    border-color: rgba(36, 176, 158, 0.35);
 }
 
 .club-card:hover::before {
@@ -487,7 +557,7 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     margin-bottom: 1.2rem;
-    box-shadow: 0 0 18px rgba(45, 212, 191, 0.3);
+    box-shadow: 0 0 18px rgba(36, 176, 158, 0.3);
 }
 
 .club-icon-wrap i {
@@ -502,16 +572,16 @@ h1, h2, h3 {
     font-weight: 600;
     letter-spacing: 0.03em;
     color: var(--color-highlight-cyan);
-    border: 1px solid rgba(45, 212, 191, 0.35);
+    border: 1px solid rgba(36, 176, 158, 0.35);
     border-radius: 20px;
-    background: rgba(45, 212, 191, 0.08);
+    background: rgba(36, 176, 158, 0.08);
     margin-bottom: 0.9rem;
 }
 
 .club-name {
     font-size: 1.2rem;
     font-weight: 700;
-    color: var(--color-text-light);
+    color: var(--color-text-faded);
     margin-bottom: 0.6rem;
     line-height: 1.35;
 }
@@ -542,7 +612,7 @@ h1, h2, h3 {
     background-color: var(--color-highlight-cyan); 
     border-radius: 50%;
     
-    box-shadow: 0 0 6px 3px rgba(45, 212, 191, 0.7); 
+    box-shadow: 0 0 6px 3px rgba(36, 176, 158, 0.7); 
     
     transition: 
         transform 0.8s ease-out, 
@@ -600,7 +670,7 @@ h1, h2, h3 {
         padding: 0.75rem 5%;
         margin: 0;
         text-align: left;
-        border-bottom: 1px solid rgba(45, 212, 191, 0.1);
+        border-bottom: 1px solid rgba(36, 176, 158, 0.1);
     }
 
   
@@ -630,4 +700,133 @@ h1, h2, h3 {
     .achievement-title {
         font-size: 1.1rem;
     }
+}
+
+#space-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none; 
+}
+
+/* Tech Skills Section */
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.skills-category {
+    color: var(--color-text-faded);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: -15px;
+    padding-left: 20px;
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100vw;
+    position: relative;
+    padding: 15px 0;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.marquee-container::before, .marquee-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 2;
+    pointer-events: none;
+}
+.marquee-container::before {
+    left: 0;
+    background: linear-gradient(to right, var(--color-dark-base) 0%, transparent 100%);
+}
+.marquee-container::after {
+    right: 0;
+    background: linear-gradient(to left, var(--color-dark-base) 0%, transparent 100%);
+}
+
+.marquee-content {
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.marquee-container.left-to-right .marquee-content {
+    animation: scroll-left 35s linear infinite;
+}
+
+.marquee-container.right-to-left .marquee-content {
+    animation: scroll-right 35s linear infinite;
+}
+
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+.skill-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 22px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--color-text-faded);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-pill:hover {
+    color: var(--color-highlight-cyan);
+    transform: translateY(-2px);
+    text-shadow: 0 0 10px rgba(45, 212, 191, 0.4);
+}
+
+.skill-pill i {
+    font-size: 1.5rem;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, var(--color-text-light) 0%, var(--color-highlight-cyan) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.blinking-cursor {
+    font-weight: 400;
+    font-size: 1.1em;
+    color: var(--color-highlight-cyan);
+    animation: blink 1s step-end infinite;
+    margin-left: 5px;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
